@@ -1,0 +1,61 @@
+// Each Part of our footer section :
+$parts: 1, 2, 3, 4;
+
+footer {
+  min-height: 30vh;
+  background: $Netural-Dblue;
+  color: white;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 80%;
+    margin: auto;
+    @each $part in $parts {
+      .part#{$part} {
+        align-self: center;
+      }
+    }
+
+    .part1 {
+      padding: 2rem;
+      ul {
+        display: flex;
+        margin-top: 4rem;
+        li {
+          margin: 0.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .part4 {
+      padding-block: 1rem;
+      input {
+        width: 200px;
+        height: 45px;
+        border-radius: 25px;
+        padding: 1rem;
+        font-size: 0.85rem;
+      }
+      p {
+        margin: 2rem 1rem;
+      }
+    }
+
+    .part2,
+    .part3 {
+      li {
+        cursor: pointer;
+        margin-block: 1rem;
+        width: max-content;
+        transition: 0.25s color ease-out;
+      }
+    }
+  }
+}
+
+footer {
+  li:hover {
+    color: $primary-red;
+  }
+}

@@ -1,0 +1,19 @@
+.third-section {
+  width: 100%;
+  & > h1 {
+    height: 15vh;
+    text-align: center;
+    font-size: clamp(2.2rem, 5vw, 2.8rem);
+    color: $Netural-Dblue;
+  }
+  .card-container {
+    display: flex;
+    min-height: 60vh;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    @import "../../components/card";
+  }
+}

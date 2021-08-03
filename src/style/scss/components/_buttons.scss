@@ -1,0 +1,35 @@
+.btn {
+  width: 130px;
+  height: 40px;
+  background-color: $primary-red;
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  @include transform(ease-in);
+}
+
+.btn:hover {
+  background-color: lighten($primary-red,10%);
+}
+
+
+.btn[head] {
+  @include MaxMedia(799px) {
+    display: none;
+  }
+}
+.btn-team {
+  background: white;
+  color: $primary-red;
+}
+
+
+
+
+.btn-footer {
+  width: 60px;
+  height: 43px;
+  margin-left: 1rem;
+}

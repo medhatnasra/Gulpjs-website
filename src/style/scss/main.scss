@@ -1,0 +1,34 @@
+// Global imports
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+
+@import "./helpers/variables";
+
+@import "./helpers/mixin";
+
+@import "./Layout/global";
+
+// Importin buttons
+
+@import "./components/buttons";
+
+// HEADER
+
+@import "./Layout/header";
+
+// Home Section :
+
+@import "./pages/home/main";
+
+// Second Section :
+
+@import "./pages/second-section/second-section";
+
+// Third Section
+
+@import "./pages/third-section/third-section";
+@import "./pages/third-section/team-section";
+
+// FOOTER
+
+@import "./Layout//footer";

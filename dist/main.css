@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.btn {
+  width: 130px;
+  height: 40px;
+  background-color: #f25f3a;
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s background ease-in;
+}
+
+.btn:hover {
+  background-color: #f6866a;
+}
+
+@media (max-width: 799px) {
+  .btn[head] {
+    display: none;
+  }
+}
+
+.btn-team {
+  background: white;
+  color: #f25f3a;
+}
+
+.btn-footer {
+  width: 60px;
+  height: 43px;
+  margin-left: 1rem;
+}
+
+.home-section {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.home-section header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  position: relative;
+}
+.home-section header .overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  z-index: 995;
+  display: none;
+}
+.home-section header .overlay.show {
+  display: block;
+}
+.home-section header ul {
+  display: flex;
+}
+@media (max-width: 799px) {
+  .home-section header ul {
+    position: absolute;
+    top: -300%;
+    left: 50%;
+    transition: 0.5s top cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: translateX(-50%);
+    flex-direction: column;
+    background: white;
+    width: 300px;
+    text-align: center;
+    z-index: 999;
+    font-weight: 700;
+    border-radius: 15px;
+  }
+}
+.home-section header ul.show {
+  top: 100%;
+}
+.home-section header ul li {
+  margin: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease-out color;
+}
+.home-section header ul li:hover {
+  color: #9095a7;
+}
+.home-section header .humb {
+  display: none;
+  z-index: 999;
+}
+.home-section header .humb .humbsvg {
+  cursor: pointer;
+  z-index: 999;
+}
+@media (max-width: 799px) {
+  .home-section header .humb {
+    display: block;
+  }
+}
+
+main {
+  min-height: 87vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+@media (max-width: 1340px) {
+  main .intro-images {
+    text-align: center;
+  }
+}
+main .intro-text,
+main .intro-images {
+  flex: 1;
+  align-self: center;
+}
+main .intro-text h1 {
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  color: #1d1e25;
+  text-align: left;
+  display: block;
+  width: 15ch;
+}
+main .intro-text p {
+  margin-block: 2.5rem;
+  max-width: 30ch;
+  color: #9095a7;
+  line-height: 1.8;
+}
+main .intro-images .intro-img {
+  max-width: 550px;
+}
+@media (max-width: 547px) {
+  main .intro-images .intro-img {
+    max-width: 330px;
+  }
+}
+
+.second-section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  padding-block: 1rem;
+  min-height: 100vh;
+}
+@media (max-width: 1375px) {
+  .second-section {
+    justify-content: center;
+  }
+}
+.second-section text,
+.second-section .flex {
+  max-width: 600px;
+}
+.second-section .big-text {
+  height: fit-content;
+  max-width: 500px;
+  padding: 1rem;
+  margin-block: 0.5rem;
+}
+.second-section .big-text .text h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: #1d1e25;
+}
+.second-section .big-text .text p {
+  margin-top: 2rem;
+  color: #9095a7;
+  max-width: 40ch;
+  line-height: 1.7;
+}
+.second-section .flex-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.second-section .flex-container .flex {
+  min-height: calc(100% / 3);
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.second-section .flex-container .flex .part1 {
+  justify-self: center;
+  width: 130px;
+}
+.second-section .flex-container .flex .part1 p {
+  text-align: center;
+  background-color: #f25f3a;
+  color: white;
+  font-weight: 700;
+  border-radius: 15px;
+  width: 60px;
+  height: 40px;
+  padding-top: 0.25rem;
+}
+.second-section .flex-container .flex .part2 h4 {
+  margin-bottom: 1.5rem;
+  color: #1d1e25;
+}
+.second-section .flex-container .flex .part2 p {
+  color: #9095a7;
+  line-height: 1.8;
+}
+
+.third-section {
+  width: 100%;
+}
+.third-section > h1 {
+  height: 15vh;
+  text-align: center;
+  font-size: clamp(2.2rem, 5vw, 2.8rem);
+  color: #1d1e25;
+}
+.third-section .card-container {
+  display: flex;
+  min-height: 60vh;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.third-section .card-container .card {
+  width: 400px;
+  text-align: center;
+}
+.third-section .card-container .card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+.third-section .card-container .card h4 {
+  margin-block: 1rem;
+}
+.third-section .card-container .card p {
+  color: #9095a7;
+  line-height: 1.6;
+}
+
+.team-section {
+  min-height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../../../../../dist/images/bg-simplify-section-desktop.svg");
+  background-color: #f25f3a;
+  padding: 1rem;
+}
+.team-section h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: white;
+  width: 700px;
+}
+@media (max-width: 862px) {
+  .team-section h1 {
+    text-align: center;
+  }
+}
+
+footer {
+  min-height: 30vh;
+  background: #1d1e25;
+  color: white;
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 80%;
+  margin: auto;
+}
+footer .grid .part1 {
+  align-self: center;
+}
+footer .grid .part2 {
+  align-self: center;
+}
+footer .grid .part3 {
+  align-self: center;
+}
+footer .grid .part4 {
+  align-self: center;
+}
+footer .grid .part1 {
+  padding: 2rem;
+}
+footer .grid .part1 ul {
+  display: flex;
+  margin-top: 4rem;
+}
+footer .grid .part1 ul li {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+footer .grid .part4 {
+  padding-block: 1rem;
+}
+footer .grid .part4 input {
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+footer .grid .part4 p {
+  margin: 2rem 1rem;
+}
+footer .grid .part2 li,
+footer .grid .part3 li {
+  cursor: pointer;
+  margin-block: 1rem;
+  width: max-content;
+  transition: 0.25s color ease-out;
+}
+
+footer li:hover {
+  color: #f25f3a;
+}
+/*# sourceMappingURL=main.css.map */

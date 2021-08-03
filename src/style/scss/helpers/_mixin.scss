@@ -1,0 +1,13 @@
+// Media Mixin
+@mixin MaxMedia($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+
+// Transform Mixin
+
+@mixin transform($timing) {
+  transition: 0.25s background $timing;
+}

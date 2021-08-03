@@ -1,0 +1,19 @@
+.team-section {
+  min-height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../../../../../dist/images/bg-simplify-section-desktop.svg");
+  background-color: $primary-red;
+  padding: 1rem;
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: white;
+    width: 700px;
+    @include MaxMedia(862px) {
+      text-align: center;
+    }
+  }
+}

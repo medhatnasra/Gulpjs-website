@@ -1,0 +1,16 @@
+.card {
+  width: 400px;
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  }
+  h4 {
+    margin-block: 1rem;
+  }
+  p {
+    color: $Netural-Gblue;
+    line-height: 1.6;
+  }
+  text-align: center;
+}

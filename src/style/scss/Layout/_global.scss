@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  width: 100%;
+  font-size: $body-fontsize;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}

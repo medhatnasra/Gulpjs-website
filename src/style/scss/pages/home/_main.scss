@@ -1,0 +1,40 @@
+main {
+  min-height: 87vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  @include MaxMedia(1340px) {
+    .intro-images {
+      text-align: center;
+    }
+  }
+
+  .intro-text,
+  .intro-images {
+    flex: 1;
+    align-self: center;
+  }
+
+  .intro-text {
+    h1 {
+      font-size: clamp(2.3rem, 5vw, 3.5rem);
+      color: $Netural-Dblue;
+      text-align: left;
+      display: block;
+      width: 15ch;
+    }
+    p {
+      margin-block: 2.5rem;
+      max-width: 30ch;
+      color: $Netural-Gblue;
+      line-height: 1.8;
+    }
+  }
+  .intro-images {
+    .intro-img {
+      max-width: 550px;
+      @include MaxMedia(547px) {
+        max-width: 330px;
+      }
+    }
+  }
+}

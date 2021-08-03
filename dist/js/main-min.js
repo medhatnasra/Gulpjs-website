@@ -1,0 +1,1 @@
+const humb=document.querySelector(".humbsvg"),headerlinks=document.querySelector("header ul"),overlay=document.querySelector(".overlay");humb.addEventListener("click",()=>{headerlinks.classList.toggle("show"),overlay.classList.toggle("show")});
